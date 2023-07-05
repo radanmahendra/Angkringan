@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Menu</title>
+  <style>
+    .container {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .payment-method {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Order Menu</h2>
+    <form>
+      <div>
+        <label for="menu">Menu:</label>
+        <input type="text" id="menu" name="menu">
+      </div>
+      <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1">
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="dana" name="payment" value="dana">
+        <label for="dana">Dana</label>
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="dana" name="payment" value="dana">
+        <label for="ShopeePay">ShopeePay</label>
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="dana" name="payment" value="dana">
+        <label for="OVO">OVO</label>
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="bank" name="payment" value="bank">
+        <label for="bank">Transfer Bank</label>
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="bank" name="payment" value="bank">
+        <label for="Bayar langsung">Bayar langsung</label>
+      </div>
+      <button type="submit">Order</button>
+    </form>
+  </div>
+</body>
+</html>
